@@ -9,7 +9,7 @@
     ],
     "sourceMap": true,
     "baseUrl": ".",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "rootDirs": [
