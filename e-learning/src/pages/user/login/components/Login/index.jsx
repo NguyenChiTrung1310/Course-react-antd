@@ -61,7 +61,7 @@ const Login = (props) => {
           }}
         >
           {tabs.length ? (
-            <React.Fragment>
+            <>
               <Tabs
                 animated={false}
                 className={styles.tabs}
@@ -73,7 +73,7 @@ const Login = (props) => {
                 {TabChildren}
               </Tabs>
               {otherChildren}
-            </React.Fragment>
+            </>
           ) : (
             props.children
           )}

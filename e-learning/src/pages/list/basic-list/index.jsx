@@ -115,12 +115,12 @@ export const BasicList = (props) => {
 
   const extraContent = (
     <div className={styles.extraContent}>
-      <RadioGroup defaultValue="all">
-        <RadioButton value="all">全部</RadioButton>
-        <RadioButton value="progress">进行中</RadioButton>
-        <RadioButton value="waiting">等待中</RadioButton>
+      <RadioGroup defaultValue='all'>
+        <RadioButton value='all'>全部</RadioButton>
+        <RadioButton value='progress'>进行中</RadioButton>
+        <RadioButton value='waiting'>等待中</RadioButton>
       </RadioGroup>
-      <Search className={styles.extraContentSearch} placeholder="请输入" onSearch={() => ({})} />
+      <Search className={styles.extraContentSearch} placeholder='请输入' onSearch={() => ({})} />
     </div>
   );
 
@@ -128,8 +128,8 @@ export const BasicList = (props) => {
     <Dropdown
       overlay={
         <Menu onClick={({ key }) => editAndDelete(key, item)}>
-          <Menu.Item key="edit">编辑</Menu.Item>
-          <Menu.Item key="delete">删除</Menu.Item>
+          <Menu.Item key='edit'>编辑</Menu.Item>
+          <Menu.Item key='delete'>删除</Menu.Item>
         </Menu>
       }
     >
@@ -178,13 +178,13 @@ export const BasicList = (props) => {
           <Card bordered={false}>
             <Row>
               <Col sm={8} xs={24}>
-                <Info title="我的待办" value="8个任务" bordered />
+                <Info title='我的待办' value='8个任务' bordered />
               </Col>
               <Col sm={8} xs={24}>
-                <Info title="本周任务平均处理时间" value="32分钟" bordered />
+                <Info title='本周任务平均处理时间' value='32分钟' bordered />
               </Col>
               <Col sm={8} xs={24}>
-                <Info title="本周完成任务数" value="24个任务" />
+                <Info title='本周完成任务数' value='24个任务' />
               </Col>
             </Row>
           </Card>
@@ -192,7 +192,7 @@ export const BasicList = (props) => {
           <Card
             className={styles.listCard}
             bordered={false}
-            title="基本列表"
+            title='基本列表'
             style={{
               marginTop: 24,
             }}
@@ -202,7 +202,7 @@ export const BasicList = (props) => {
             extra={extraContent}
           >
             <Button
-              type="dashed"
+              type='dashed'
               style={{
                 width: '100%',
                 marginBottom: 8,
@@ -215,8 +215,8 @@ export const BasicList = (props) => {
             </Button>
 
             <List
-              size="large"
-              rowKey="id"
+              size='large'
+              rowKey='id'
               loading={loading}
               pagination={paginationProps}
               dataSource={list}
@@ -224,7 +224,7 @@ export const BasicList = (props) => {
                 <List.Item
                   actions={[
                     <a
-                      key="edit"
+                      key='edit'
                       onClick={(e) => {
                         e.preventDefault();
                         showEditModal(item);
@@ -232,11 +232,11 @@ export const BasicList = (props) => {
                     >
                       编辑
                     </a>,
-                    <MoreBtn key="more" item={item} />,
+                    <MoreBtn key='more' item={item} />,
                   ]}
                 >
                   <List.Item.Meta
-                    avatar={<Avatar src={item.logo} shape="square" size="large" />}
+                    avatar={<Avatar src={item.logo} shape='square' size='large' />}
                     title={<a href={item.href}>{item.title}</a>}
                     description={item.subDescription}
                   />

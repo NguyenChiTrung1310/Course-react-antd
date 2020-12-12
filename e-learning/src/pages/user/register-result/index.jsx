@@ -5,14 +5,14 @@ import styles from './style.less';
 
 const actions = (
   <div className={styles.actions}>
-    <a href="">
-      <Button size="large" type="primary">
-        <FormattedMessage id="userandregister-result.register-result.view-mailbox" />
+    <a href=''>
+      <Button size='large' type='primary'>
+        <FormattedMessage id='userandregister-result.register-result.view-mailbox' />
       </Button>
     </a>
-    <Link to="/">
-      <Button size="large">
-        <FormattedMessage id="userandregister-result.register-result.back-home" />
+    <Link to='/'>
+      <Button size='large'>
+        <FormattedMessage id='userandregister-result.register-result.back-home' />
       </Button>
     </Link>
   </div>
@@ -21,11 +21,11 @@ const actions = (
 const RegisterResult = ({ location }) => (
   <Result
     className={styles.registerResult}
-    status="success"
+    status='success'
     title={
       <div className={styles.title}>
         <FormattedMessage
-          id="userandregister-result.register-result.msg"
+          id='userandregister-result.register-result.msg'
           values={{
             email: location.state ? location.state.account : 'AntDesign@example.com',
           }}

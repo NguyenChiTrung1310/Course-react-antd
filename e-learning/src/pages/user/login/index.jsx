@@ -13,7 +13,7 @@ const LoginMessage = ({ content }) => (
       marginBottom: 24,
     }}
     message={content}
-    type="error"
+    type='error'
     showIcon
   />
 );
@@ -35,14 +35,14 @@ const Login = (props) => {
   return (
     <div className={styles.main}>
       <LoginFrom activeKey={type} onTabChange={setType} onSubmit={handleSubmit}>
-        <Tab key="account" tab="账户密码登录">
+        <Tab key='account' tab='账户密码登录'>
           {status === 'error' && loginType === 'account' && !submitting && (
-            <LoginMessage content="账户或密码错误（admin/ant.design）" />
+            <LoginMessage content='账户或密码错误（admin/ant.design）' />
           )}
 
           <UserName
-            name="userName"
-            placeholder="用户名: admin or user"
+            name='userName'
+            placeholder='用户名: admin or user'
             rules={[
               {
                 required: true,
@@ -51,8 +51,8 @@ const Login = (props) => {
             ]}
           />
           <Password
-            name="password"
-            placeholder="密码: ant.design"
+            name='password'
+            placeholder='密码: ant.design'
             rules={[
               {
                 required: true,
@@ -61,13 +61,13 @@ const Login = (props) => {
             ]}
           />
         </Tab>
-        <Tab key="mobile" tab="手机号登录">
+        <Tab key='mobile' tab='手机号登录'>
           {status === 'error' && loginType === 'mobile' && !submitting && (
-            <LoginMessage content="验证码错误" />
+            <LoginMessage content='验证码错误' />
           )}
           <Mobile
-            name="mobile"
-            placeholder="手机号"
+            name='mobile'
+            placeholder='手机号'
             rules={[
               {
                 required: true,
@@ -80,11 +80,11 @@ const Login = (props) => {
             ]}
           />
           <Captcha
-            name="captcha"
-            placeholder="验证码"
+            name='captcha'
+            placeholder='验证码'
             countDown={120}
-            getCaptchaButtonText=""
-            getCaptchaSecondText="秒"
+            getCaptchaButtonText=''
+            getCaptchaSecondText='秒'
             rules={[
               {
                 required: true,
@@ -111,7 +111,7 @@ const Login = (props) => {
           <AlipayCircleOutlined className={styles.icon} />
           <TaobaoCircleOutlined className={styles.icon} />
           <WeiboCircleOutlined className={styles.icon} />
-          <Link className={styles.register} to="/user/register">
+          <Link className={styles.register} to='/user/register'>
             注册账户
           </Link>
         </div>

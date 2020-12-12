@@ -35,9 +35,15 @@
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
     "@ant-design/pro-descriptions": "^1.0.19",
@@ -88,7 +94,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^6.1.0",
-    "@umijs/fabric": "^2.3.0",
+    "@umijs/fabric": "^2.3.1",
     "@umijs/plugin-blocks": "^2.0.5",
     "@umijs/plugin-esbuild": "^1.0.1",
     "@umijs/preset-ant-design-pro": "^1.2.0",
@@ -100,7 +106,7 @@
     "cross-port-killer": "^1.1.1",
     "detect-installer": "^1.0.1",
     "enzyme": "^3.11.0",
-    "eslint": "^7.1.0",
+    "eslint": "^7.15.0",
     "express": "^4.17.1",
     "gh-pages": "^3.0.0",
     "jsdom-global": "^3.0.2",
@@ -112,7 +118,9 @@
     "stylelint": "^13.0.0",
     "typescript": "^4.0.3"
   },
-  "engines": { "node": ">=10.0.0" },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "checkFiles": [
     "src/**/*.js*",
     "src/**/*.ts*",

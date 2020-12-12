@@ -56,11 +56,11 @@ const OperationModal = (props) => {
     if (done) {
       return (
         <Result
-          status="success"
-          title="操作成功"
-          subTitle="一系列的信息描述，很短同样也可以带标点。"
+          status='success'
+          title='操作成功'
+          subTitle='一系列的信息描述，很短同样也可以带标点。'
           extra={
-            <Button type="primary" onClick={onDone}>
+            <Button type='primary' onClick={onDone}>
               知道了
             </Button>
           }
@@ -72,8 +72,8 @@ const OperationModal = (props) => {
     return (
       <Form {...formLayout} form={form} onFinish={handleFinish}>
         <Form.Item
-          name="title"
-          label="任务名称"
+          name='title'
+          label='任务名称'
           rules={[
             {
               required: true,
@@ -81,11 +81,11 @@ const OperationModal = (props) => {
             },
           ]}
         >
-          <Input placeholder="请输入" />
+          <Input placeholder='请输入' />
         </Form.Item>
         <Form.Item
-          name="createdAt"
-          label="开始时间"
+          name='createdAt'
+          label='开始时间'
           rules={[
             {
               required: true,
@@ -95,16 +95,16 @@ const OperationModal = (props) => {
         >
           <DatePicker
             showTime
-            placeholder="请选择"
-            format="YYYY-MM-DD HH:mm:ss"
+            placeholder='请选择'
+            format='YYYY-MM-DD HH:mm:ss'
             style={{
               width: '100%',
             }}
           />
         </Form.Item>
         <Form.Item
-          name="owner"
-          label="任务负责人"
+          name='owner'
+          label='任务负责人'
           rules={[
             {
               required: true,
@@ -112,14 +112,14 @@ const OperationModal = (props) => {
             },
           ]}
         >
-          <Select placeholder="请选择">
-            <Select.Option value="付晓晓">付晓晓</Select.Option>
-            <Select.Option value="周毛毛">周毛毛</Select.Option>
+          <Select placeholder='请选择'>
+            <Select.Option value='付晓晓'>付晓晓</Select.Option>
+            <Select.Option value='周毛毛'>周毛毛</Select.Option>
           </Select>
         </Form.Item>
         <Form.Item
-          name="subDescription"
-          label="产品描述"
+          name='subDescription'
+          label='产品描述'
           rules={[
             {
               message: '请输入至少五个字符的产品描述！',
@@ -127,7 +127,7 @@ const OperationModal = (props) => {
             },
           ]}
         >
-          <TextArea rows={4} placeholder="请输入至少五个字符" />
+          <TextArea rows={4} placeholder='请输入至少五个字符' />
         </Form.Item>
       </Form>
     );

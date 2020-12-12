@@ -6,11 +6,11 @@ import { GridContent } from '@ant-design/pro-layout';
 import styles from './index.less';
 
 const Content = (
-  <Fragment>
+  <>
     <div className={styles.title}>
       <FormattedMessage
-        id="resultandfail.error.hint-title"
-        defaultMessage="The content you submitted has the following error:"
+        id='resultandfail.error.hint-title'
+        defaultMessage='The content you submitted has the following error:'
       />
     </div>
     <div
@@ -25,15 +25,15 @@ const Content = (
         className={styles.error_icon}
       />
       <FormattedMessage
-        id="resultandfail.error.hint-text1"
-        defaultMessage="Your account has been frozen"
+        id='resultandfail.error.hint-text1'
+        defaultMessage='Your account has been frozen'
       />
       <a
         style={{
           marginLeft: 16,
         }}
       >
-        <FormattedMessage id="resultandfail.error.hint-btn1" defaultMessage="Thaw immediately" />
+        <FormattedMessage id='resultandfail.error.hint-btn1' defaultMessage='Thaw immediately' />
         <RightOutlined />
       </a>
     </div>
@@ -45,25 +45,25 @@ const Content = (
         className={styles.error_icon}
       />
       <FormattedMessage
-        id="resultandfail.error.hint-text2"
-        defaultMessage="Your account is not yet eligible to apply"
+        id='resultandfail.error.hint-text2'
+        defaultMessage='Your account is not yet eligible to apply'
       />
       <a
         style={{
           marginLeft: 16,
         }}
       >
-        <FormattedMessage id="resultandfail.error.hint-btn2" defaultMessage="Upgrade immediately" />
+        <FormattedMessage id='resultandfail.error.hint-btn2' defaultMessage='Upgrade immediately' />
         <RightOutlined />
       </a>
     </div>
-  </Fragment>
+  </>
 );
 export default () => (
   <GridContent>
     <Card bordered={false}>
       <Result
-        status="error"
+        status='error'
         title={formatMessage({
           id: 'resultandfail.error.title',
         })}
@@ -71,8 +71,8 @@ export default () => (
           id: 'resultandfail.error.description',
         })}
         extra={
-          <Button type="primary">
-            <FormattedMessage id="resultandfail.error.btn-text" defaultMessage="Return to modify" />
+          <Button type='primary'>
+            <FormattedMessage id='resultandfail.error.btn-text' defaultMessage='Return to modify' />
           </Button>
         }
         style={{

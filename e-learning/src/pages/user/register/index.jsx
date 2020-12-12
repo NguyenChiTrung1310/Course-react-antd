@@ -9,17 +9,17 @@ const InputGroup = Input.Group;
 const passwordStatusMap = {
   ok: (
     <div className={styles.success}>
-      <FormattedMessage id="userandregister.strength.strong" />
+      <FormattedMessage id='userandregister.strength.strong' />
     </div>
   ),
   pass: (
     <div className={styles.warning}>
-      <FormattedMessage id="userandregister.strength.medium" />
+      <FormattedMessage id='userandregister.strength.medium' />
     </div>
   ),
   poor: (
     <div className={styles.error}>
-      <FormattedMessage id="userandregister.strength.short" />
+      <FormattedMessage id='userandregister.strength.short' />
     </div>
   ),
 };
@@ -161,11 +161,11 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
   return (
     <div className={styles.main}>
       <h3>
-        <FormattedMessage id="userandregister.register.register" />
+        <FormattedMessage id='userandregister.register.register' />
       </h3>
-      <Form form={form} name="UserRegister" onFinish={onFinish}>
+      <Form form={form} name='UserRegister' onFinish={onFinish}>
         <FormItem
-          name="mail"
+          name='mail'
           rules={[
             {
               required: true,
@@ -182,7 +182,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
           ]}
         >
           <Input
-            size="large"
+            size='large'
             placeholder={formatMessage({
               id: 'userandregister.email.placeholder',
             })}
@@ -210,7 +210,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
                     marginTop: 10,
                   }}
                 >
-                  <FormattedMessage id="userandregister.strength.msg" />
+                  <FormattedMessage id='userandregister.strength.msg' />
                 </div>
               </div>
             )
@@ -218,11 +218,11 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
           overlayStyle={{
             width: 240,
           }}
-          placement="right"
+          placement='right'
           visible={visible}
         >
           <FormItem
-            name="password"
+            name='password'
             className={
               form.getFieldValue('password') &&
               form.getFieldValue('password').length > 0 &&
@@ -235,8 +235,8 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
             ]}
           >
             <Input
-              size="large"
-              type="password"
+              size='large'
+              type='password'
               placeholder={formatMessage({
                 id: 'userandregister.password.placeholder',
               })}
@@ -244,7 +244,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
           </FormItem>
         </Popover>
         <FormItem
-          name="confirm"
+          name='confirm'
           rules={[
             {
               required: true,
@@ -258,8 +258,8 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
           ]}
         >
           <Input
-            size="large"
-            type="password"
+            size='large'
+            type='password'
             placeholder={formatMessage({
               id: 'userandregister.confirm-password.placeholder',
             })}
@@ -267,21 +267,21 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
         </FormItem>
         <InputGroup compact>
           <Select
-            size="large"
+            size='large'
             value={prefix}
             onChange={changePrefix}
             style={{
               width: '20%',
             }}
           >
-            <Option value="86">+86</Option>
-            <Option value="87">+87</Option>
+            <Option value='86'>+86</Option>
+            <Option value='87'>+87</Option>
           </Select>
           <FormItem
             style={{
               width: '80%',
             }}
-            name="mobile"
+            name='mobile'
             rules={[
               {
                 required: true,
@@ -298,7 +298,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
             ]}
           >
             <Input
-              size="large"
+              size='large'
               placeholder={formatMessage({
                 id: 'userandregister.phone-number.placeholder',
               })}
@@ -308,7 +308,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
         <Row gutter={8}>
           <Col span={16}>
             <FormItem
-              name="captcha"
+              name='captcha'
               rules={[
                 {
                   required: true,
@@ -319,7 +319,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
               ]}
             >
               <Input
-                size="large"
+                size='large'
                 placeholder={formatMessage({
                   id: 'userandregister.verification-code.placeholder',
                 })}
@@ -328,7 +328,7 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
           </Col>
           <Col span={8}>
             <Button
-              size="large"
+              size='large'
               disabled={!!count}
               className={styles.getCaptcha}
               onClick={onGetCaptcha}
@@ -343,16 +343,16 @@ const Register = ({ submitting, dispatch, userAndregister }) => {
         </Row>
         <FormItem>
           <Button
-            size="large"
+            size='large'
             loading={submitting}
             className={styles.submit}
-            type="primary"
-            htmlType="submit"
+            type='primary'
+            htmlType='submit'
           >
-            <FormattedMessage id="userandregister.register.register" />
+            <FormattedMessage id='userandregister.register.register' />
           </Button>
-          <Link className={styles.login} to="/user/login">
-            <FormattedMessage id="userandregister.register.sign-in" />
+          <Link className={styles.login} to='/user/login'>
+            <FormattedMessage id='userandregister.register.sign-in' />
           </Link>
         </FormItem>
       </Form>

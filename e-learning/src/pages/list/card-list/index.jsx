@@ -31,15 +31,15 @@ class CardList extends Component {
         </p>
         <div className={styles.contentLink}>
           <a>
-            <img alt="" src="https://gw.alipayobjects.com/zos/rmsportal/MjEImQtenlyueSmVEfUD.svg" />{' '}
+            <img alt='' src='https://gw.alipayobjects.com/zos/rmsportal/MjEImQtenlyueSmVEfUD.svg' />{' '}
             快速开始
           </a>
           <a>
-            <img alt="" src="https://gw.alipayobjects.com/zos/rmsportal/NbuDUAuBlIApFuDvWiND.svg" />{' '}
+            <img alt='' src='https://gw.alipayobjects.com/zos/rmsportal/NbuDUAuBlIApFuDvWiND.svg' />{' '}
             产品简介
           </a>
           <a>
-            <img alt="" src="https://gw.alipayobjects.com/zos/rmsportal/ohOEPSYdDTNnyMbGuyLb.svg" />{' '}
+            <img alt='' src='https://gw.alipayobjects.com/zos/rmsportal/ohOEPSYdDTNnyMbGuyLb.svg' />{' '}
             产品文档
           </a>
         </div>
@@ -48,8 +48,8 @@ class CardList extends Component {
     const extraContent = (
       <div className={styles.extraImg}>
         <img
-          alt="这是一个标题"
-          src="https://gw.alipayobjects.com/zos/rmsportal/RzwpdLnhmvDJToTdfDPe.png"
+          alt='这是一个标题'
+          src='https://gw.alipayobjects.com/zos/rmsportal/RzwpdLnhmvDJToTdfDPe.png'
         />
       </div>
     );
@@ -58,7 +58,7 @@ class CardList extends Component {
       <PageContainer content={content} extraContent={extraContent}>
         <div className={styles.cardList}>
           <List
-            rowKey="id"
+            rowKey='id'
             loading={loading}
             grid={{
               gutter: 16,
@@ -77,10 +77,10 @@ class CardList extends Component {
                     <Card
                       hoverable
                       className={styles.card}
-                      actions={[<a key="option1">操作一</a>, <a key="option2">操作二</a>]}
+                      actions={[<a key='option1'>操作一</a>, <a key='option2'>操作二</a>]}
                     >
                       <Card.Meta
-                        avatar={<img alt="" className={styles.cardAvatar} src={item.avatar} />}
+                        avatar={<img alt='' className={styles.cardAvatar} src={item.avatar} />}
                         title={<a>{item.title}</a>}
                         description={
                           <Paragraph
@@ -100,7 +100,7 @@ class CardList extends Component {
 
               return (
                 <List.Item>
-                  <Button type="dashed" className={styles.newButton}>
+                  <Button type='dashed' className={styles.newButton}>
                     <PlusOutlined /> 新增产品
                   </Button>
                 </List.Item>

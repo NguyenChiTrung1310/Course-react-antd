@@ -44,7 +44,7 @@ const AvatarList = ({ children, size, maxLength = 5, excessItemsStyle, ...other 
   if (numToShow < numOfChildren) {
     const cls = avatarSizeToClassName(size);
     childrenWithProps.push(
-      <li key="exceed" className={cls}>
+      <li key='exceed' className={cls}>
         <Avatar size={size} style={excessItemsStyle}>{`+${numOfChildren - maxLength}`}</Avatar>
       </li>,
     );

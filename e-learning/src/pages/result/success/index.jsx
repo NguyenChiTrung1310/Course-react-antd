@@ -13,7 +13,7 @@ const desc1 = (
         margin: '8px 0 4px',
       }}
     >
-      <FormattedMessage id="resultandsuccess.success.step1-operator" defaultMessage="Qu Lili" />
+      <FormattedMessage id='resultandsuccess.success.step1-operator' defaultMessage='Qu Lili' />
       <DingdingOutlined
         style={{
           marginLeft: 8,
@@ -36,15 +36,15 @@ const desc2 = (
         margin: '8px 0 4px',
       }}
     >
-      <FormattedMessage id="resultandsuccess.success.step2-operator" defaultMessage="Zhou Maomao" />
-      <a href="">
+      <FormattedMessage id='resultandsuccess.success.step2-operator' defaultMessage='Zhou Maomao' />
+      <a href=''>
         <DingdingOutlined
           style={{
             color: '#00A0E9',
             marginLeft: 8,
           }}
         />
-        <FormattedMessage id="resultandsuccess.success.step2-extra" defaultMessage="Urge" />
+        <FormattedMessage id='resultandsuccess.success.step2-extra' defaultMessage='Urge' />
       </a>
     </div>
   </div>
@@ -60,8 +60,8 @@ const content = (
       <Descriptions.Item
         label={
           <FormattedMessage
-            id="resultandsuccess.success.operate-id"
-            defaultMessage="Project ID："
+            id='resultandsuccess.success.operate-id'
+            defaultMessage='Project ID：'
           />
         }
       >
@@ -69,16 +69,16 @@ const content = (
       </Descriptions.Item>
       <Descriptions.Item
         label={
-          <FormattedMessage id="resultandsuccess.success.principal" defaultMessage="Principal：" />
+          <FormattedMessage id='resultandsuccess.success.principal' defaultMessage='Principal：' />
         }
       >
-        <FormattedMessage id="resultandsuccess.success.step1-operator" defaultMessage="Qu Lili" />
+        <FormattedMessage id='resultandsuccess.success.step1-operator' defaultMessage='Qu Lili' />
       </Descriptions.Item>
       <Descriptions.Item
         label={
           <FormattedMessage
-            id="resultandsuccess.success.operate-time"
-            defaultMessage="Effective time："
+            id='resultandsuccess.success.operate-time'
+            defaultMessage='Effective time：'
           />
         }
       >
@@ -95,8 +95,8 @@ const content = (
             }}
           >
             <FormattedMessage
-              id="resultandsuccess.success.step1-title"
-              defaultMessage="Create project"
+              id='resultandsuccess.success.step1-title'
+              defaultMessage='Create project'
             />
           </span>
         }
@@ -110,8 +110,8 @@ const content = (
             }}
           >
             <FormattedMessage
-              id="resultandsuccess.success.step2-title"
-              defaultMessage="Departmental preliminary review"
+              id='resultandsuccess.success.step2-title'
+              defaultMessage='Departmental preliminary review'
             />
           </span>
         }
@@ -125,8 +125,8 @@ const content = (
             }}
           >
             <FormattedMessage
-              id="resultandsuccess.success.step3-title"
-              defaultMessage="Financial review"
+              id='resultandsuccess.success.step3-title'
+              defaultMessage='Financial review'
             />
           </span>
         }
@@ -138,7 +138,7 @@ const content = (
               fontSize: 14,
             }}
           >
-            <FormattedMessage id="resultandsuccess.success.step4-title" defaultMessage="Finish" />
+            <FormattedMessage id='resultandsuccess.success.step4-title' defaultMessage='Finish' />
           </span>
         }
       />
@@ -146,23 +146,23 @@ const content = (
   </>
 );
 const extra = (
-  <Fragment>
-    <Button type="primary">
-      <FormattedMessage id="resultandsuccess.success.btn-return" defaultMessage="Back to list" />
+  <>
+    <Button type='primary'>
+      <FormattedMessage id='resultandsuccess.success.btn-return' defaultMessage='Back to list' />
     </Button>
     <Button>
-      <FormattedMessage id="resultandsuccess.success.btn-project" defaultMessage="View project" />
+      <FormattedMessage id='resultandsuccess.success.btn-project' defaultMessage='View project' />
     </Button>
     <Button>
-      <FormattedMessage id="resultandsuccess.success.btn-print" defaultMessage="Print" />
+      <FormattedMessage id='resultandsuccess.success.btn-print' defaultMessage='Print' />
     </Button>
-  </Fragment>
+  </>
 );
 export default () => (
   <GridContent>
     <Card bordered={false}>
       <Result
-        status="success"
+        status='success'
         title={formatMessage({
           id: 'resultandsuccess.success.title',
         })}
